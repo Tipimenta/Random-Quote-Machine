@@ -1,0 +1,13 @@
+App{
+  transition: all 2s ease;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+

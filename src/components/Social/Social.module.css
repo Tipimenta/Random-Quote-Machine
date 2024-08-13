@@ -1,0 +1,8 @@
+.social {
+    color: black;
+    font-size: 35px;
+    text-decoration: none;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+}
