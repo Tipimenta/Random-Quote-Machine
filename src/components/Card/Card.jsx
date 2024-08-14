@@ -2,7 +2,11 @@ import PropTypes from 'prop-types';
 import style from "./Card.module.css";
 import { Text, Author, Button, Social } from "../../components";
 
-const Card = ({ versiculoData, generateVersiculo, xLink, Color }) => {
+const Card = ({ versiculoData, generateVersiculo, xLink, Color, handleCopyLink }) => {
+
+
+
+  
   return (
     <div id="quote-box" className={style.card}>
       <Text verse={versiculoData.versiculo} />
@@ -14,7 +18,7 @@ const Card = ({ versiculoData, generateVersiculo, xLink, Color }) => {
         id="new-quote"  
         Color={Color} 
       />
-      <Social xLink={xLink}/>
+      <Social xLink={xLink} handleCopyLink={handleCopyLink}/>
       </div>
     </div>
   );
@@ -28,6 +32,7 @@ Card.propTypes = {
   generateVersiculo: PropTypes.func.isRequired,
   xLink: PropTypes.string.isRequired,
   Color: PropTypes.string.isRequired, 
+  handleCopyLink: PropTypes.func.isRequired
 };
 
 export { Card };
